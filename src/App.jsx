@@ -585,7 +585,7 @@ const QuantumGaltonBoardApp = () => {
                 {/* Footer */}
                 <div className="mt-12 text-center text-gray-400 text-sm">
                     <p>
-                        Quantum Galton Board Generator - Corrected implementation based on quantum circuit principles
+                        If you have any inquiries please contact: redwanrahman2002@outlook.com
                     </p>
                     <p className="mt-2">
                         Built with React and custom quantum circuit simulation matching PennyLane behavior
