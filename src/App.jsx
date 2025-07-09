@@ -404,20 +404,6 @@ const QuantumGaltonBoardApp = () => {
                                 </div>
                             )}
 
-                            <div className="flex flex-col">
-                                <label className="text-sm font-medium mb-1">Shots</label>
-                                <input
-                                    type="number"
-                                    min="100"
-                                    max="10000"
-                                    step="100"
-                                    value={nShots}
-                                    onChange={(e) => setNShots(parseInt(e.target.value))}
-                                    className="w-24 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                                />
-                            </div>
-                        </div>
-
                         <div className="flex gap-3">
                             <button
                                 onClick={() => setShowSettings(!showSettings)}
