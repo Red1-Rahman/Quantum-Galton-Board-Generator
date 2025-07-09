@@ -366,27 +366,14 @@ const QuantumGaltonBoardApp = () => {
                             <div className="flex flex-col">
                                 <label className="text-sm font-medium mb-1">Qubits/Layers</label>
                                 <input
-                                      type="number"
-                                      min="2"
-                                      max="8"
-                                      value={nLayers}
-                                      onChange={(e) => {
-                                    const value = parseInt(e.target.value);
-                                    if (!isNaN(value)) {
-                                      setNLayers(value);
-                                    }
-                                      }}
-            
-  className="w-20 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-/>
-
+                                    type="number"
+                                    min="2"
+                                    max="8"
+                                    value={nLayers}
+                                    onChange={(e) => setNLayers(parseInt(e.target.value))}
+                                    className="w-20 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                />
                             </div>
-                            {nLayers === 1 && (
-  <div className="mt-4 p-3 bg-yellow-800/30 border border-yellow-500 text-yellow-300 rounded-lg text-sm">
-    ⚠️ Single events are not predictable, they are random. Only statistical predictions (for many repetitions) are possible in quantum physics.
-  </div>
-)}
-
 
                             <div className="flex flex-col">
                                 <label className="text-sm font-medium mb-1">Distribution</label>
