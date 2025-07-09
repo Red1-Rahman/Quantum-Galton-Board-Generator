@@ -417,6 +417,12 @@ const QuantumGaltonBoardApp = () => {
                                 />
                             </div>
                         </div>
+                        {nShots === 1 && (
+    <div className="my-4 p-3 text-sm bg-yellow-800/20 text-yellow-300 border border-yellow-500 rounded-lg">
+        ⚠️ Single events are not predictable; they are random. Only statistical predictions (from many repetitions) are meaningful in quantum physics.
+    </div>
+)}
+
 
                         <div className="flex gap-3">
                             <button
